@@ -15,8 +15,6 @@ from bleu import compute_bleu
 from nltk.translate.meteor_score import meteor_score
 from pyter import ter
 
-
-
 def compute_metrics(ref_text, hyp_text):
     # INPUTS
     #
