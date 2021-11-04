@@ -10,10 +10,10 @@ def compute_sacre_bleu(hypotheses, references,
                  tokenize = "none",
                  use_effective_order = False):
 
-    hyp_joined = [" ".join(hyp) for hyp in hypotheses]
-    ref_joined = [" ".join(ref) for ref in references]
+    # hyp_joined = [" ".join(hyp) for hyp in hypotheses]
+    # ref_joined = [" ".join(ref) for ref in references]
 
-    bleu = corpus_bleu(hyp_joined, [ref_joined],
+    bleu = corpus_bleu(hypotheses, [references],
                        smooth_method=smooth_method,
                        smooth_value=smooth_value,
                        force=force,
